@@ -1,0 +1,23 @@
+
+
+
+spring:
+  profiles: dev
+  application:
+    name: eureka-server
+server:
+  port: 1001
+eureka:
+  instance:
+    hostname: 10.101.90.78
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+---
+
+
+
+
+
