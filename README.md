@@ -31,10 +31,10 @@
             username: lzx
             password: lzx
 3.在需要自动更新的类上添加@RefreshScope注解      
-4.自动更新: 添加Webhooks,
+4.自动更新: config-repo添加Webhooks,
             Payload URL配置 http://m2221d6543.iok.la/monitor(url外网必须可以访问到)
             Content type选择 application/json                    
-//4.手动更新:每次修改git中的配置文件,需要通过POST方法访问http://ip:port/actuator/bus-refresh(配置中心的ip和port)去主动获取新的配置                        
+//4.手动更新: 每次修改git中的配置文件,需要通过POST方法访问http://ip:port/actuator/bus-refresh(配置中心的ip和port)去主动获取新的配置                        
 
 
 
